@@ -10,9 +10,9 @@
 <body>
 <header class="header">
   <div class="container header-inner">
-    <h1 class="logo">🛠️ Admin <span>Panel</span></h1>
+    <h1 class="logo"> Admin <span>Panel</span></h1>
     <nav class="nav">
-      <a href="{% static 'index.html' %}" class="btn-admin">← Volver a la tienda</a>
+      <a href="{% url 'inicio' %}" class="btn-admin">← Volver a la tienda</a>
       <button id="themeToggle" class="theme-toggle" title="Cambiar tema">🌙</button>
     </nav>
   </div>
@@ -27,12 +27,12 @@
         <label>Nombre
           <input type="text" id="name" required>
         </label>
-        <label>Precio (USD)
+        <label>Precio 
           <input type="number" id="price" min="0" step="0.01" required>
         </label>
       </div>
       <div class="form-row">
-        <label>Empresa
+        <label>Franquicia
           <select id="empresa" required>
             <option value="">-- Seleccionar --</option>
             <option>Marvel</option>

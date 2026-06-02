@@ -4,11 +4,13 @@ from django.db import models
 
 class Producto(models.Model):
     id= models.AutoField(primary_key=True)
-    Nombre_producto = models.TextField(max_length=60, unique=True)
+    Nombre_producto = models.CharField(max_length=60, unique=True)
     stock = models.IntegerField()
-    descripcion = models.TextField(max_length=200)
+    descripcion = models.CharField(max_length=200)
     precio = models.FloatField()
-    
+    personaje = models.CharField(max_length=60)
+    franquicia = models.CharField(max_length=60)    
+
 
 
     def __str__(self):

@@ -4,5 +4,5 @@ from django.shortcuts import render
 def Home(request):
     return render(request, 'index.html')
 
-def Admin(request):
-    return render(request, 'admin.html')
+def Registrar(request):
+   return render(request, 'Pages/registrar.html')
