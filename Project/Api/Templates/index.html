@@ -1,0 +1,50 @@
+{% load static %}  
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FunkoMarket - Tienda de Funko Pop</title>
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+<header class="header">
+  <div class="container header-inner">
+    <h1 class="logo">🎁 Funko<span>Market</span></h1>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Buscar Funko Pop...">
+    </div>
+    <nav class="nav">
+      <a href="{% static 'admin.html' %}" class="btn-admin">Admin</a>
+      <button id="themeToggle" class="theme-toggle" title="Cambiar tema">🌙</button>
+    </nav>
+  </div>
+</header>
+
+<main class="container main">
+  <aside class="filters">
+    <h3>Filtrar por Empresa</h3>
+    <div id="empresaFilters" class="filter-group"></div>
+    <h3>Filtrar por Película / Personaje</h3>
+    <div id="peliculaFilters" class="filter-group"></div>
+    <button id="clearFilters" class="btn-clear">Limpiar filtros</button>
+  </aside>
+
+  <section class="products-section">
+    <div class="section-head">
+      <h2>Productos</h2>
+      <span id="productCount" class="count"></span>
+    </div>
+    <div id="productsGrid" class="products-grid"></div>
+    <p id="noResults" class="no-results" hidden>No se encontraron productos con esos filtros.</p>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© 2026 FunkoMarket — Coleccionables originales</p>
+</footer>
+
+<script src="{% static 'js/data.js' %}"></script>
+<script src="{% static 'js/app.js' %}"></script>
+</body>
+</html>
