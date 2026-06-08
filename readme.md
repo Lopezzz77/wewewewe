@@ -1,8 +1,8 @@
 # Sistema Funko
-- Materia: P.D.I.S.C
+- Materia:  Evaluación de Proyectos
 - Curso: 7°1
 - Grupo Taller: 7.1
-- Docente: Gareis Pablo
+- Docente: Lautaro Aragón
 
 ## Lenguajes de Programación
 - Python + Django
@@ -11,7 +11,10 @@
 - JavaScript
 
 ## Tematica
-Sistema CRUD de wawawa
+Sistema CRUD de tienda de ropa urbana
 
 ## Integrantes
+- Camila Soliz: Backend y Líder
 - César López: Encargado del Frontend
+- Sofía Balcazar: Documentación
+- Iván Machuca: Marketing
