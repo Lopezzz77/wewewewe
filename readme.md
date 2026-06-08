@@ -1,4 +1,4 @@
-# Sistema Funko
+# Sistema Catálogo y Venta de Ropa (Urban's Style)
 - Materia:  Evaluación de Proyectos
 - Curso: 7°1
 - Grupo Taller: 7.1
